@@ -20,6 +20,8 @@ def bubble_sort(nums: list[int]) -> list[int]:
             if nums[j] > nums[j + 1]:
                 nums[j], nums[j + 1] = nums[j + 1], nums[j]
                 swapped = True
+                # if in any pass, no swaps are made, the array is sorted
+                # and we can break out of the loop
         if not swapped:
             break
     return nums
