@@ -7,9 +7,10 @@
 # 1. If the current node is None, this path does not exist, so return False.
 # 2. Subtract the current node's value from the remaining sum.
 # 3. If the node is a leaf (no left child and no right child), the path is complete.
-#    Return True only when the remaining sum is 0.
-# 4. Otherwise, check the left child and the right child with the new remaining sum.
-# 5. Return True if either side finds a matching path.
+#    It matches only when the running sum equals the target.
+# 4. Otherwise, check the left child, then the right child, with the same running sum.
+# 5. After both sides are checked, subtract the current node's value so the parent can try its other child.
+# 6. Return True if either side finds a matching root-to-leaf path.
 
 # Time Complexity: O(n) - in the worst case every node is visited once.
 # Space Complexity: O(h) - the call stack goes as deep as the height of the tree.
@@ -24,10 +25,19 @@ class TreeNode:
 
 
 class Solution:
-    def hasPathSum(self, root: TreeNode | None, targetSum: int) -> bool:
+    def __init__(self):
+        self.sum = 0
+
+    def hasPathSum(self, root: TreeNode | None, target: int) -> bool:
         if root is None:
             return False
-        remaining = targetSum - root.val
+        self.sum += root.val
         if root.left is None and root.right is None:
-            return remaining == 0
-        return self.hasPathSum(root.left, remaining) or self.hasPathSum(root.right, remaining)
+            if self.sum == target:
+                return True
+        if self.hasPathSum(root.left, target):
+            return True
+        if self.hasPathSum(root.right, target):
+            return True
+        self.sum -= root.val
+        return False

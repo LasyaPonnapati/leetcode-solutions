@@ -26,6 +26,13 @@ class Solution:
     def maxDepth(self, root: TreeNode | None) -> int:
         if root is None:
             return 0
-        left = self.maxDepth(root.left)
-        right = self.maxDepth(root.right)
-        return 1 + max(left, right)
+        self.depth=1
+        self._preorder(root,1)
+        return self.depth
+
+    def _preorder(self, root: TreeNode | None, level: int) -> None:
+        if root is None:
+            return
+        self.depth=max(level,self.depth)
+        self._preorder(root.left,level+1)
+        self._preorder(root.right,level+1)
