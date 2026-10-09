@@ -16,13 +16,13 @@
 # Space Complexity: O(1) - only the length and the best profit are stored.
 
 class Solution:
-    def maxProfit(self, prices: list[int]) -> int:
-        n=len(prices)
+    def maxProfit(self, arr: list[int]) -> int:
+        n=len(arr)
         profit=0
         for i in range(0,n):
             for j in range(i+1,n):
-                if prices[j]-prices[i]>profit:
-                    profit = prices[j]-prices[i]
+                if arr[j]-arr[i]>profit:
+                    profit = arr[j]-arr[i]
         return profit
 
 # Approach 2 (track the cheapest buy so far):
@@ -37,12 +37,12 @@ class Solution:
 # Space Complexity: O(1) - only the cheapest price and the best profit are stored.
 
 class Solution:
-    def maxProfit(self, prices: list[int]) -> int:
-        min_price = prices[0]
-        profit = 0
-        for i in range(1, len(prices)):
-            if prices[i] < min_price:
-                min_price = prices[i]
-            elif prices[i] - min_price > profit:
-                profit = prices[i] - min_price
+    def maxProfit(self, arr: list[int]) -> int:
+        min_price=arr[0]
+        profit=0
+        for i in arr:
+            if i<min_price:
+                min_price=i
+            elif i-min_price>profit:
+                profit=i-min_price
         return profit
