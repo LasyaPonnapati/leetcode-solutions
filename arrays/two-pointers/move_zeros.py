@@ -12,7 +12,7 @@
 # Space Complexity: O(1) - only two pointer variables are used.
 
 class Solution:
-    def moveZeroes(self, nums: List[int]) -> None:
+    def moveZeroes(self, nums:list[int]) -> None:
         x, y = 0, 0
         while y < len(nums):
             if nums[y] != 0:
