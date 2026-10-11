@@ -47,7 +47,7 @@ class Solution:
 
 # Time Complexity: O(n) - n is the length of s. We scan s once to
 # count, then scan a fixed 128 slots.
-# Space Complexity: O(1) - the list size is always 128, independent of n.
+# Space Complexity: O(1) - the list size is always 26, independent of n.
 
 
 class Solution:
@@ -55,10 +55,10 @@ class Solution:
         vowels = ['a', 'e', 'i', 'o', 'u']
         max_cv = 0
         max_cc = 0
-        freq = [0] * 128
+        freq = [0] * 26
         for i in s:
             freq[ord(i)] += 1
-        for i in range(128):
+        for i in range(26):
             v = freq[i]
             if chr(i) in vowels:
                 if v > max_cv:
