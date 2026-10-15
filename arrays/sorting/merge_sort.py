@@ -1,3 +1,4 @@
+# LeetCode: N/A — Merge Sort (foundational DSA practice)
 # Merge Sort
 # Given an array of integers nums, sort it in non-decreasing order
 # using merge sort and return the sorted array.

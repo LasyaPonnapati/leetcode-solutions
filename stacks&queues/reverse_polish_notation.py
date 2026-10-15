@@ -11,9 +11,9 @@
 # When you see an operator, pop the right operand first, then the
 # left operand, apply the operator, and push the result back.
 #
-# Time: O(n) — each token is processed once; each number is pushed
-#       and popped at most once.
-# Space: O(n) — the stack can hold up to n numbers in the worst case.
+# Time Complexity: O(n) — each token is processed once; each number is pushed
+# and popped at most once.
+# Space Complexity: O(n) — the stack can hold up to n numbers in the worst case.
 
 
 class Solution:

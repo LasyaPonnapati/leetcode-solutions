@@ -12,6 +12,11 @@
 #    sits at the front. Push O(n), pop/top O(1).
 # 4. MyStackUsingTwoQueues: push into q2, move all of q1 into q2,
 #    then swap. Push O(n), pop/top O(1).
+#
+# Time Complexity: depends on the variant — list/deque with pop(0) gives
+# O(n) or O(n^2) pop/top; rotate-on-push or two-queue designs trade push
+# cost for O(1) pop/top. See per-method comments.
+# Space Complexity: O(n) for elements stored in the queue(s).
 
 from collections import deque
 

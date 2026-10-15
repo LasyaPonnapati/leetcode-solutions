@@ -1,3 +1,4 @@
+# LeetCode: N/A — Factorial (foundational DSA / recursion practice)
 # Factorial of n
 # Given a non-negative integer n, return n! (n factorial).
 # n! = n * (n - 1) * (n - 2) * ... * 1, and 0! is defined as 1.

@@ -1,7 +1,18 @@
+# LeetCode: N/A — Doubly Circular Linked List (foundational DSA practice)
 # Doubly Circular Linked List
 # Combines a doubly linked list with a circular one: each node has
 # prev and next, and the ends wrap around (tail.next = head,
 # head.prev = tail). delete_at_end stays O(1) thanks to prev.
+
+# Approach:
+# Maintain head, tail, and circular prev/next links. Per-method time and space
+# notes are written above each operation.
+
+# Time Complexity: depends on the operation — O(1) at known ends, O(n) when
+# walking the ring to an index.
+# Space Complexity: O(n) for n nodes; O(1) extra per operation unless a new node
+# is allocated.
+
 
 class Node:
     def __init__(self, data):

@@ -15,8 +15,8 @@
 # string is invalid. At the end the stack must be empty (no leftover
 # openers).
 #
-# Time: O(n) — each character is pushed and/or popped at most once.
-# Space: O(n) — the stack can hold up to n opening brackets.
+# Time Complexity: O(n) — each character is pushed and/or popped at most once.
+# Space Complexity: O(n) — the stack can hold up to n opening brackets.
 
 
 class Solution:

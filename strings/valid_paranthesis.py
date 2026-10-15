@@ -4,6 +4,32 @@
 # parentheses. Given a string s of '(' and ')', return the minimum
 # number of parentheses you must add to make s valid.
 
+# Approach (stack):
+# 1. Walk the string left to right.
+# 2. Push each '(' onto a stack.
+# 3. On ')', pop a matching '(' if the stack is non-empty; otherwise count one
+#    extra ')' that needs a '(' added.
+# 4. After the loop, every unmatched '(' on the stack needs a ')' added.
+# 5. Return count of extra closes plus the number of leftover opens.
+
+# Time Complexity: O(n) - we look at each character once.
+# Space Complexity: O(n) - the stack can hold up to n opening brackets.
+
+class Solution:
+    def minAddToMakeValid(self, s: str) -> int:
+        stack=[]
+        count=0
+        for s in s:
+            if s=='(':
+                stack.append(s)
+            else:
+                if stack:
+                    stack.pop()
+                else:
+                    count+=1
+        return count+len(stack)
+        
+
 # Approach (count unmatched opens and extra closes):
 # 1. Walk the string left to right.
 # 2. c1 = number of unmatched '(' so far.

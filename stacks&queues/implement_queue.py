@@ -1,7 +1,17 @@
+# LeetCode: N/A — Implement Queue (foundational DSA practice)
 # Implement Queue
 # Build a queue (FIFO: first in, first out) with push, pop, peek,
 # is_empty, and size. Shown three ways: Python list, collections.deque,
 # and queue.Queue.
+
+# Approach:
+# 1. QueueUsingList: append at the back; pop(0) from the front (O(n) pop).
+# 2. QueueUsingDeque: append and popleft for O(1) push and pop.
+# 3. QueueUsingQueue: thread-safe queue.Queue with put/get.
+
+# Time Complexity: push/peek/is_empty/size are O(1) for deque and queue.Queue;
+# list-based pop is O(n). See per-method comments for each class.
+# Space Complexity: O(n) to store n elements in the queue.
 
 from collections import deque
 from queue import Queue

@@ -1,3 +1,4 @@
+# LeetCode: N/A — Quick Sort (foundational DSA practice)
 # Quick Sort
 # Given an array of integers nums, sort it in non-decreasing order
 # using quick sort and return the sorted array.

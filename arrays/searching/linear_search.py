@@ -1,3 +1,4 @@
+# LeetCode: N/A — Linear Search (foundational DSA practice)
 # Linear Search
 # Given an array arr and a target value, find the target by checking each element
 # from left to right. Return the element and its index when found.

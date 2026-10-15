@@ -9,6 +9,11 @@
 #    all items to a temp stack, takes the front, then dumps them
 #    back. O(n).
 # 2. MyQueueUsingDeque: same idea, but both stacks are deques.
+#
+# Time Complexity: push O(1); pop and peek O(n) because elements are reversed
+# through a temporary stack.
+# Space Complexity: O(n) for stored elements, plus O(n) temporary space during
+# pop/peek while reversing.
 
 from collections import deque
 
