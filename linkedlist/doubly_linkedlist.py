@@ -1,7 +1,18 @@
+# LeetCode: N/A — Doubly Linked List (foundational DSA practice)
 # Doubly Linked List
 # Same idea as a singly linked list, but each node also stores a
 # pointer to the previous node. That makes delete_at_end O(1),
 # because tail already knows its previous node.
+
+# Approach:
+# Maintain head, tail, and both prev/next links on each node. Per-method
+# time and space notes are written above each operation.
+
+# Time Complexity: depends on the operation — O(1) at known ends, O(n) when
+# walking to an index.
+# Space Complexity: O(n) for n nodes (two pointers per node); O(1) extra per
+# operation unless allocating a new node.
+
 
 class Node:
     def __init__(self, data):

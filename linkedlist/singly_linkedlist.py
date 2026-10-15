@@ -1,8 +1,19 @@
+# LeetCode: N/A — Singly Linked List (foundational DSA practice)
 # Singly Linked List
 # A linear data structure where each node stores data and a pointer
 # to the next node. The list keeps a head (first node) and a tail
 # (last node) so we can add/remove at both ends without extra scans
 # when the operation is at the start or the end.
+
+# Approach:
+# Each method updates head/tail and next pointers as needed. Per-method
+# time and space notes are written above each operation.
+
+# Time Complexity: depends on the operation — O(1) at head/tail when pointers
+# are known, O(n) when walking to an index or searching.
+# Space Complexity: O(n) to store n nodes; each operation uses O(1) extra
+# unless a new node is allocated.
+
 
 class Node:
     def __init__(self, data):

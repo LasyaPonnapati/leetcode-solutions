@@ -14,10 +14,10 @@
 # entry. Pushing stores the new min. Popping restores the previous
 # min automatically because it is saved on the new top.
 #
-# Time: O(1) for push, pop, top, and getMin — each does a constant
-#       amount of work (append, pop, or index the last item).
-# Space: O(n) — the stack stores two numbers for each of the n
-#        elements.
+# Time Complexity: O(1) for push, pop, top, and getMin — each does a constant
+# amount of work (append, pop, or index the last item).
+# Space Complexity: O(n) — the stack stores two numbers for each of the n
+# elements.
 
 
 class MinStack:

@@ -8,8 +8,8 @@
 # using indices i+1 .. i+n-1. idx = j-n maps those into nums
 # (negative idx when j < n, wrap-around when j >= n).
 #
-# Time: O(n^2) — for each of n elements we may scan up to n-1 others.
-# Space: O(n) — ans stores one result per element (not counting input).
+# Time Complexity: O(n^2) — for each of n elements we may scan up to n-1 others.
+# Space Complexity: O(n) — ans stores one result per element (not counting input).
 
 
 class Solution:
@@ -29,8 +29,8 @@ class Solution:
 # The stack holds values to the right. For i >= n we only maintain the
 # stack (the wrap-around copy). For i < n we also write ans[i].
 #
-# Time: O(n) — each value is pushed and popped at most twice (once per copy).
-# Space: O(n) — the stack and ans are both size n.
+# Time Complexity: O(n) — each value is pushed and popped at most twice (once per copy).
+# Space Complexity: O(n) — the stack and ans are both size n.
 
 
 class SolutionUsingStack:

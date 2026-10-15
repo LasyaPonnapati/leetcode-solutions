@@ -1,3 +1,4 @@
+# LeetCode: N/A — Implement a Stack (foundational DSA practice)
 # Implement a Stack
 # Build a last-in, first-out (LIFO) stack with push, pop, peek,
 # is_empty, and size. Three versions: Python list, collections.deque,

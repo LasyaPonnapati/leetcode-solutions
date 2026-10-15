@@ -13,10 +13,10 @@
 # skip it. A ')' is outermost if it closes that last remaining '(',
 # so we skip it too. Every other bracket is inner and goes into ans.
 #
-# Time: O(n) — each character is pushed/popped at most once and
-#       appended to ans at most once.
-# Space: O(n) — the stack can hold up to n/2 opening brackets, and
-#        ans can grow to length n.
+# Time Complexity: O(n) — each character is pushed/popped at most once and
+# appended to ans at most once.
+# Space Complexity: O(n) — the stack can hold up to n/2 opening brackets, and
+# ans can grow to length n.
 
 
 class Solution:

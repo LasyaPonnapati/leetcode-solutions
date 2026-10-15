@@ -1,7 +1,18 @@
+# LeetCode: N/A — Singly Circular Linked List (foundational DSA practice)
 # Singly Circular Linked List
 # Same idea as a singly linked list, but the last node's next pointer
 # points back to the head instead of None. That forms a circle, so
 # traversal must stop when we return to head (not when next is None).
+
+# Approach:
+# Same operations as a singly linked list, but tail.next always points to head.
+# Per-method time and space notes are written above each operation.
+
+# Time Complexity: depends on the operation — O(1) at head/tail when possible,
+# O(n) when walking the ring to an index.
+# Space Complexity: O(n) for n nodes; O(1) extra per operation unless a new node
+# is allocated.
+
 
 class Node:
     def __init__(self, data):

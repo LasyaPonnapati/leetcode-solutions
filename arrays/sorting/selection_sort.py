@@ -1,3 +1,4 @@
+# LeetCode: N/A — Selection Sort (foundational DSA practice)
 # Selection Sort
 # Given an array of integers nums, sort it in non-decreasing order
 # using selection sort and return the sorted array.

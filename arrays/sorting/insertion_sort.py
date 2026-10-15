@@ -1,3 +1,4 @@
+# LeetCode: N/A — Insertion Sort (foundational DSA practice)
 # Insertion Sort
 # Given an array of integers nums, sort it in non-decreasing order
 # using insertion sort and return the sorted array.

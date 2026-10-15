@@ -1,3 +1,4 @@
+# LeetCode 231. Power of Two
 # Power of Two
 # Given an integer n, return True if n is a power of two, otherwise False.
 # A number is a power of two if it equals 2^k for some integer k >= 0

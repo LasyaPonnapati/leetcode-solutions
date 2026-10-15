@@ -1,3 +1,4 @@
+# LeetCode: N/A — Left Rotate an Array by One (foundational DSA practice)
 # Left Rotate an Array by One
 # Given an array arr, move every element one place to the left.
 # The first element wraps around and becomes the last element.

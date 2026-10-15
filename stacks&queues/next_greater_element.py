@@ -7,9 +7,9 @@
 # Approach 1: For each value in nums1, scan nums2 until that value
 # is found, then keep scanning right for the first larger number.
 #
-# Time: O(n * m) — n = len(nums1), m = len(nums2). Each nums1 value
-#       may scan all of nums2 to find it, then the rest for a greater.
-# Space: O(n) — ans stores one result per nums1 value.
+# Time Complexity: O(n * m) — n = len(nums1), m = len(nums2). Each nums1 value
+# may scan all of nums2 to find it, then the rest for a greater.
+# Space Complexity: O(n) — ans stores one result per nums1 value.
 
 
 class Solution:
@@ -29,14 +29,14 @@ class Solution:
         return ans
 
 
-# Approach 2: Walk nums2 right to left. The stack holds values to
+# Approach 2(monotonic stack): Walk nums2 right to left. The stack holds values to
 # the right, decreasing from top to bottom, so the top is the next
 # greater of the current value (or the stack is empty → -1). Then
 # map each nums1 value to that answer.
 #
-# Time: O(n + m) — each nums2 value is pushed and popped at most
-#       once, then we fill n answers from the map.
-# Space: O(m) — the stack and the next-greater array are both size m.
+# Time Complexity: O(n + m) — each nums2 value is pushed and popped at most
+# once, then we fill n answers from the map.
+# Space Complexity: O(m) — the stack and the next-greater array are both size m.
 
 
 class SolutionUsingStack:
